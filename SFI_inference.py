@@ -8,7 +8,7 @@
 #     from stochastic trajectories, arXiv:1809.09650, 2018.
 #
 
-from SFI_projectors import TrajectoryProjectors
+from .SFI_projectors import TrajectoryProjectors
 
 
 import numpy as np
@@ -226,7 +226,7 @@ class StochasticForceInference(object):
                 funcs = self.diffusion_basis.functions
                 is_interacting = self.diffusion_basis['interaction']
             else:
-                import SFI_bases
+                from StochasticForceInference import SFI_bases
                 funcs,is_interacting = SFI_bases.basis_selector(self.diffusion_basis,self.data)
 
             # Prepare the functions:

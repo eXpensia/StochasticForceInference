@@ -5,7 +5,7 @@ the namespace.
 """
 
 
-from SFI_langevin import OverdampedLangevinProcess
-from SFI_data import StochasticTrajectoryData
-from SFI_inference import StochasticForceInference
-import SFI_plotting_toolkit 
+from .SFI_langevin import OverdampedLangevinProcess
+from .SFI_data import StochasticTrajectoryData
+from .SFI_inference import StochasticForceInference
+from .SFI_plotting_toolkit import *
